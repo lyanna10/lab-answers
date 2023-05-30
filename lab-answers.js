@@ -22,7 +22,7 @@ for (let i = 1; i < 100; i++) {
     }
 }
 console.log(x)
-*/
+
 
 //Wild Wild Life
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
@@ -46,4 +46,19 @@ console.log(dart)
 //Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
 wolfy.splice(0, 1, 'Gameboy')
 console.log(wolfy)
+*/
 
+//Yell at the Ninja Turtles 
+//Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+/*const ninja = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+let n = ninja[0].toUpperCase();
+for (n === "Donatello" || n === "Leonardo" || n === "Raphael" || n === "Michaelangelo") {
+
+}*/
+
+let ninja = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+let ninjaTurtles = [];
+for (let item of ninja) {
+    ninjaTurtles.push(item.toUpperCase());
+}
+console.log(ninjaTurtles);
