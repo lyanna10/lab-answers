@@ -58,7 +58,7 @@ for (let item of ninja) {
     ninjaTurtles.push(item.toUpperCase());
 }
 console.log(ninjaTurtles);
-*/
+
 
 //Methods, Revisited
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
@@ -104,5 +104,26 @@ console.log(favMovies)
 
 //After running the above tasks, console.log the index of "Fast and Furious."
 console.log(favMovies.indexOf('Fast and Furious'));
+
+//We removed it from the array. What value do we get when we look for the index of something that is not in the array?
+//-1
+
+//Thought Question: We declared the variable favMovies with const, and yet we were allowed to change the array. Weird? Should we have used let?
+//I don't believe so, it didn't give me a problem so I don't see the need to change it. 
+*/
+//Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+//Remove Eggbert (hint look at the slice/splice methods)
+whereIsWaldo.splice(1, 1);
+console.log(whereIsWaldo);
+//Change "Neff" to "No One"
+whereIsWaldo[2].splice(2, 1, 'No One');
+console.log(whereIsWaldo);
+
+//Access and console.log "Waldo".
+const waldo = whereIsWaldo[3][1][1];
+console.log(waldo);
 
 //
