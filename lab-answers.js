@@ -110,7 +110,7 @@ console.log(favMovies.indexOf('Fast and Furious'));
 
 //Thought Question: We declared the variable favMovies with const, and yet we were allowed to change the array. Weird? Should we have used let?
 //I don't believe so, it didn't give me a problem so I don't see the need to change it. 
-*/
+
 //Where is Waldo
 const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                       ["Lucinda", "Jacc", "Neff", "Snoop"],
@@ -125,5 +125,24 @@ console.log(whereIsWaldo);
 //Access and console.log "Waldo".
 const waldo = whereIsWaldo[3][1][1];
 console.log(waldo);
+*/
+//Excited Kitten
+//for (let i = 0; i < 20; i++) {
+   // console.log("Love me, pet me! HSSSSSS!")
+//}
 
-//
+//For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random
+const logMessages = [
+    "...human... why are you taking pictures of me...?",
+    "...the catnip made me do it...",
+    "...why does the red dot always get away...?"
+  ];
+
+  for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+      const randomLog = logMessages[Math.floor(Math.random() * logMessages.length)];
+      console.log(randomLog);
+    } else {
+      console.log(i);
+    }
+  }
