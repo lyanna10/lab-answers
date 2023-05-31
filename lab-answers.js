@@ -125,11 +125,11 @@ console.log(whereIsWaldo);
 //Access and console.log "Waldo".
 const waldo = whereIsWaldo[3][1][1];
 console.log(waldo);
-*/
+
 //Excited Kitten
-//for (let i = 0; i < 20; i++) {
-   // console.log("Love me, pet me! HSSSSSS!")
-//}
+for (let i = 0; i < 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!")
+}
 
 //For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random
 const logMessages = [
@@ -146,3 +146,16 @@ const logMessages = [
       console.log(i);
     }
   }
+  */
+  //Find the Median
+  //Find the median number in the following nums array, then console.log that number
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+const middleIndex = Math.floor(nums.length / 2);
+if (nums.length % 3 === 0) {
+  const median = nums[middleIndex];
+  console.log(median);
+} else {
+  const median = (nums[middleIndex + 1] + nums[middleIndex]) / 2;
+  console.log(median);
+}
+// Expected output: 15
